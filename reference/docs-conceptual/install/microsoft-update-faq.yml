@@ -23,6 +23,7 @@ sections:
 
           - On your schedule
           - After testing for your environment
+          Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
           - At scale across your enterprise
 
       - question: How soon after release are updates advertised by Microsoft Update?
